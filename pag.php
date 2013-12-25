@@ -9,8 +9,9 @@
 		$num = 5000;
 		function testa_escopo1()
 		{
-			$num += 5;
-			echo $num . "<br/>";
+			// invoca a variável global no array GLOBALS
+			$GLOBALS["num"] += 5;
+			echo $GLOBALS["num"] . "<br/>";
 		}
 		echo $num . "<br/>";
 		testa_escopo1();
