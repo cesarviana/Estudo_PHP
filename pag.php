@@ -5,14 +5,16 @@
 </head>
 <body>
 	<?php 
-		// Constantes do PHP
-		echo TRUE . "<br/>";
-		echo PHP_VERSION . "<br/>";
-		echo PHP_OS . "<br/>";
-		echo E_ERROR . "<br/>";
-		echo E_WARNING . "<br/>";
-		echo E_PARSE . "<br/>";
-		echo E_NOTICE . "<br/>";
+		// variáveis PHP
+		// Começa com $. 
+		// O segundo caracter não pode ser um número
+		// Case sensitive - recomendável usar minúsculas
+		
+		$var = "a";
+		echo $var;
+		// erro de compilação
+		// $100vergonha = 4;
+		
 	?>
 </body>
 </html>
