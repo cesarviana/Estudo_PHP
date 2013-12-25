@@ -5,16 +5,15 @@
 </head>
 <body>
 	<?php 
-		// variáveis PHP
-		// Começa com $. 
-		// O segundo caracter não pode ser um número
-		// Case sensitive - recomendável usar minúsculas
-		
-		$var = "a";
-		echo $var;
-		// erro de compilação
-		// $100vergonha = 4;
-		
+		// Escopo de variáveis PHP
+		$num = 5000;
+		function testa_escopo1()
+		{
+			$num += 5;
+			echo $num . "<br/>";
+		}
+		echo $num . "<br/>";
+		testa_escopo1();
 	?>
 </body>
 </html>
