@@ -5,13 +5,14 @@
 </head>
 <body>
 	<?php 
-		// Exemplo 4_3 livro Novatec
-		define("meunome","Cesar");
-		define("peso","69");
-		
-		// a concatenação é feita com pontos
-		echo "Meu nome é " . meunome . ".<br/>";
-		echo "Peso = " . peso . " quilos.<br/>";
+		// Constantes do PHP
+		echo TRUE . "<br/>";
+		echo PHP_VERSION . "<br/>";
+		echo PHP_OS . "<br/>";
+		echo E_ERROR . "<br/>";
+		echo E_WARNING . "<br/>";
+		echo E_PARSE . "<br/>";
+		echo E_NOTICE . "<br/>";
 	?>
 </body>
 </html>
