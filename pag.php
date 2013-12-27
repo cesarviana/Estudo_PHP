@@ -5,11 +5,12 @@
 </head>
 <body>
 	<?php 
-		// Conversão de variáveis PHP
-		$string = "5.77";
-		$numero = 3;
-		$soma = $numero + (integer) $string;
-		echo $soma;
+		// Interpolação de variáveis
+		$nome = "Cesar";
+		$time = "Internacional";
+		$pref = "bi";
+		echo "Meu nome é $nome e eu torço para o $time.<br/>";
+		echo "O $time é ${pref}campeão da América.";
 	?>
 </body>
 </html>
