@@ -5,16 +5,11 @@
 </head>
 <body>
 	<?php 
-		// Escopo de variáveis PHP
-		$num = 5000;
-		function testa_escopo1()
-		{
-			// invoca a variável global no array GLOBALS
-			$GLOBALS["num"] += 5;
-			echo $GLOBALS["num"] . "<br/>";
-		}
-		echo $num . "<br/>";
-		testa_escopo1();
+		// Conversão de variáveis PHP
+		$string = "5.77";
+		$numero = 3;
+		$soma = $numero + (integer) $string;
+		echo $soma;
 	?>
 </body>
 </html>
