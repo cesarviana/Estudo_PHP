@@ -5,12 +5,12 @@
 </head>
 <body>
 	<?php 
-		// Interpolação de variáveis
-		$nome = "Cesar";
+		// Variáveis criadas durante a execução
+		$texto = "time";
+		$$texto;
 		$time = "Internacional";
-		$pref = "bi";
-		echo "Meu nome é $nome e eu torço para o $time.<br/>";
-		echo "O $time é ${pref}campeão da América.";
+		
+		echo "Meu time é o $time.";
 	?>
 </body>
 </html>
