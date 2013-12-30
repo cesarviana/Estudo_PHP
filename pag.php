@@ -5,16 +5,13 @@
 </head>
 <body>
 	<?php 
-		// Tipos de variáveis - Objetos
-		class Teste
-		{
-			function saudacao()
-			{
-				echo "Oi pessoal!";
-			}
-		}
-		$obj = new Teste;
-		$obj -> saudacao();
+	// Operadores 
+		// aritiméticos
+			$a = 1 + 1;
+			$a = 1 - 1;
+			$a = 1 * 10;
+			echo $a / 5;
+			echo $a % 5;	
 	?>
 </body>
 </html>
