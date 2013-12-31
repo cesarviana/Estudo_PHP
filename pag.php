@@ -5,14 +5,14 @@
 </head>
 <body>
 	<?php 
-	// Operadores 
-		// Ternário
-		$frequencia = 0.74;
-		$nota = 7;
-		
-		$nota = $frequencia >= 0.75 ? $nota + 1 : $nota - 1;
-		
-		echo $nota;
+	//Estruturas de controle
+	// condicionais
+		$nota = 5;
+		if ($nota >= 7):
+			echo "Aprovado";
+		else:
+			echo "Reprovado";
+		endif;
 	?>
 </body>
 </html>
