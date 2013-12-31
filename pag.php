@@ -6,18 +6,19 @@
 <body>
 	<?php 
 	// Operadores 
-		// binários
-			// ~ inverte os bits
-			// & E
-			// | Ou
-			// ^ Ou exclusivo
-			// op1 >> n Desloca op1 n bits à direita
-			// op1 << n Desloca op1 n bits à esquerda
-			
-			$a = 10;
-			$a = $a >> 1;
-			echo $a;
-			echo $a == 5 & $a != 4;
+		// comparação
+		// op1 == op2	| Verdadeiro se op1 for igual a op2
+		// op1 >= op2	| Verdadeiro se op1 for maior ou igual op2
+		// op1 <= op2	| Verdadeiro se op1 for menor ou igual op2
+		// op1 != op2	| Verdadeiro se op1 for diferente de op2
+		// op1 <> op2	| Verdadeiro se op1 for diferente de op2
+		// op1 > op2	| Verdadeiro se op1 for maior que op2
+		// op1 < op2	| Verdadeiro se op1 for menor que op2
+		
+		$maior = 10;
+		$menor = 0;
+		
+		echo $maior > $menor;
 	?>
 </body>
 </html>
