@@ -6,27 +6,44 @@
 <body>
 	<?php 
 	//Estruturas de controle
-	// condicionais
-		$nota = 5;
-		if ($nota >= 7):
-			echo "Aprovado";
-		else:
-			echo "Reprovado";
-		endif;
+	// Comandos de repetição			
 		
-		// switch
-		$opcao = "SIM";
-		switch ($opcao)
-		{
-			case "SIM" :
-				echo "<br> Você aceitou os termos.";
-				break;
-			case "NAO" :
-				echo "<br> Você rejetiou os termos.";
-				break;
-			default:
-				echo "<br> A opção escolhida é inválida.";
+		// while
+		
+		$var = 1;
+		while ($var != 5) :
+			if($var % 2 == 0) :
+				echo "<h2> $var </h2>";
+			else :
+				echo "<h1> $var </h1>";
+			endif;
+			$var++;
+		endwhile;
+		
+		// for
+		
+		for($i = 0; $i <= 20; $i++) :
+			echo "$i, ";
+		endfor;
+		
+		// foreach
+		
+		$vetor = array(1,2,3,4);
+		foreach ($vetor as $v) :
+			echo "<br> O valor atual do vetor é $v.";
+		endforeach;
+		
+		foreach ($vetor as $chave => $valor){
+			echo "<br> vetor[$chave] = $valor";
 		}
 	?>
+	
+	<select>
+	<?php
+		foreach ($vetor as $chave => $valor) :
+			echo "<option value='$chave'>$valor</option>";
+		endforeach;
+	?>
+	</select>
 </body>
 </html>
