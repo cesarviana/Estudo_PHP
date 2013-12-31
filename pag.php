@@ -6,16 +6,18 @@
 <body>
 	<?php 
 	// Operadores 
-		// unários
-			$contador = 0;
-			echo $contador++; // mostra 0 e incrementa 0 -> 1
-			echo ++$contador; // incrementa 1 -> 2 (depois mostra)
-			echo --$contador; // decrementa 2 - 1 (depois mostra)
-			echo $contador--; // mostra 1 e decrementa 1 -> 0
+		// binários
+			// ~ inverte os bits
+			// & E
+			// | Ou
+			// ^ Ou exclusivo
+			// op1 >> n Desloca op1 n bits à direita
+			// op1 << n Desloca op1 n bits à esquerda
 			
-			// saida = 02110
-			
-			echo -$contador;
+			$a = 10;
+			$a = $a >> 1;
+			echo $a;
+			echo $a == 5 & $a != 4;
 	?>
 </body>
 </html>
